@@ -43,20 +43,33 @@ body {
 }
 
 #navbar img.logo {
-    height: 80px;
-    /* Altura desejada para o logo */
+    height: 80px;/* Altura desejada para o logo */
     width: auto;
-    margin: 1px 0;
-    /* Margem superior e inferior de 10px para ajustar o posicionamento */
+    margin: 1px 0;/* Margem superior e inferior de 10px para ajustar o posicionamento */
 }
 
 .navbar-container {
-    width: 45%;
-    /* Define centralização */
+    width: 46%;/* Define centralização */
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
+}
+
+.navbar-container a {
+    color: white; 
+    text-decoration: none;/*retirando o sublinhado do link*/
+
+}
+
+#navbar .navbar-item a {
+    padding: 0 20px;
+    transition: all 300ms ease;
+}
+
+#navbar .navbar-item a:hover {
+    color: #1d8ab9;
+    cursor: pointer;
 }
 
 #navbar .navbar-container ul {
@@ -76,13 +89,13 @@ body {
     cursor: pointer;
 }
 
-#navbar .navbar-container ul li:nth-child(3) {
-    border-right: 1px solid white;
-}
+/* #navbar .navbar-container ul li:nth-child(3) {
+    border-right: 1px solid rgb(217, 17, 17);  lista no menu
+} */
 
 /*Showcase*/
 #showcase {
-    height: 100vh;
+    height: 150vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +121,7 @@ body {
     font-size: 1.1 rem;
 }
 
-/* Footer */
+Footer
 #footer {
     background: black;
     color: white;
@@ -203,6 +216,7 @@ body {
     font-weight: bold;
     /* Negrito */
     cursor: pointer;
+    text-decoration: none;
     /* Cursor ao passar por cima */
     transition: background-color 0.3s ease;
     /* Transição suave de cor */
@@ -254,6 +268,7 @@ body {
     /* Negrito */
     cursor: pointer;
     /* Cursor ao passar por cima */
+    text-decoration: none;
     transition: background-color 0.3s ease;
     /* Transição suave de cor */
 }
@@ -316,46 +331,47 @@ body {
     background-color: #1d8ab9;
     color: white;
     padding: 50px;
-    /* Espaçamento interno */
     text-align: left;
-    /* Alinhamento do texto */
-    /* width: 100%; */
-    /* Largura da div */
-    height: 100%;
+    height: 80%;
     display: inline-block;
+    width: 100%;
 }
 
 #contact h1 {
     text-align: left;
+    width: 80%;
     /* Alinhamento do texto */
-    transform: translate(16%, -0%);
+    transform: translate(28%, -0%);
     font-weight: bold;
     /* Negrito */
     font-size: 220%;
+    
 }
 
 #contact p {
     text-align: left;
+    width: 80%;
     /* Alinhamento do texto */
-    transform: translate(16%, -0%);
+    transform: translate(28%, -0%);
 }
 
 #contactus {
-    background-color: #333;
+    /* background-color: #333; */
     text-align: left;
-    width: 90%;
+    width: 50%;
     /* Alinhamento do texto */
-    transform: translate(10%, -0%);
+    transform: translate(42%, -0%);
+
 }
 
 #contactus p {
     text-align: left;
     /* Alinhamento do texto */
-    transform: translate(0%, -0%);
+    transform: translate(4%, -0%);
 }
 
 #contactus input {
-    width: 41%;
+    width: 63%;
     padding: 5px;
     /* margin-bottom: 10px; */
     /*aumenta espaço entre botões*/
@@ -365,6 +381,7 @@ body {
     font-size: 14px;
     color: #333;
     /* Cor do texto */
+    transform: translate(4%, -0%);
 }
 
 /* Estilo para o placeholder */
@@ -391,22 +408,17 @@ button:hover {
 
 
 #datatalent {
-    background-color: #1db954;
-    text-align: left;/* Alinhamento do texto */
-    display: inline-block;
-    width: 38%;/* Largura da div */
-    height: 60%;
-    position: absolute;
-    /* top: 50%;
-    left: 50%; */
-    transform: translate(145%, -85%);
+    /* background-color: #1db954;*/
+    text-align: left; 
+    width: 50%;
+    transform: translate(7%, -60%);
 }
 
 #datatalent h3 {
     color: white;
     text-align: left;
     width: 300px;
-    transform: translate(6%, 35%);
+    transform: translate(30%, 35%);
 
 }
 
@@ -414,13 +426,13 @@ button:hover {
     color: white;
     text-align: left;
     width: 300px;
-    transform: translate(6%, 2%);
+    transform: translate(30%, 2%);
 
 }
 
 #datatalent input {
-    width: 70%;
-    height: 27%;
+    width: 53%;
+    height: 36%;
     padding: 5px;
     /* margin-bottom: 10px; */
     /*aumenta espaço entre botões*/
@@ -429,14 +441,14 @@ button:hover {
     border-radius: 2px;
     font-size: 14px;
     color: #333;/* Cor do texto */
-    transform: translate(-10%, 11%);
+    transform: translate(2%, 10%);
 }
 
 /* Estilo para o placeholder */
 input::placeholder {
     color: #1d8ab9;/* Cor do placeholder */
-     text-align: left; /*Alinhamento à esquerda */
-    vertical-align: top; /* Alinhamento ao topo */
+    text-align: left; /*Alinhamento à esquerda */
+    vertical-align: top;
 }
 
 #datatalent .btn-primary {
@@ -453,7 +465,7 @@ input::placeholder {
     cursor: pointer;
     /* Cursor ao passar por cima */
     transition: background-color 0.3s ease;
-    transform: translate(165%, 40%);
+    transform: translate(250%, 50%);
 
     /* Transição suave de cor */
     input {

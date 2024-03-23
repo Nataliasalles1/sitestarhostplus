@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/stylehome.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="../javascript/scripthome.js"></script>
 
     <title>Starhost - Aluguel por temporada</title>
 </head>
@@ -14,13 +15,14 @@
     <!--Navbar-->
     <navbar id="navbar">
         <div class="navbar-container">
-            <img src="../img/logo.png" alt="" class="logo" />
+            <a href="http://127.0.0.1:5500/pages/index.html">
+                <img src="../img/logo.png" alt="" class="logo" />
+            </a>
             <ul class="navbar-items">
-                <li class="navbar-item">QUEM SOMOS</li>
-                <li class="navbar-item">SERVIÇOS</li>
-                <li class="navbar-item">CONTATO</li>
+                <li class="navbar-item"><a href="http://127.0.0.1:5500/pages/whoweare.html">QUEM SOMOS</a></li>
+                <li class="navbar-item"><a href="whoweare.html#introplan"> SERVIÇOS</a></li>
+                <li class="navbar-item"><a href="index.html#contact"> CONTATO</a></li>
                 <li class="navbar-item">IMÓVEIS</li>
-                <li class="navbar-item">RESERVE AQUI</li>
             </ul>
         </div>
     </navbar>
@@ -44,7 +46,8 @@
             temporada proporcionando maiores lucros com menor esforço para o proprietário e uma melhor experiência para
             os hóspedes.
         </p>
-        <button class="btn-primary">Saiba mais sobre nós</button>
+        <a href="whoweare.html#whoweare" class="btn-primary">Saiba mais sobre nós</a>
+
     </div>
     </div>
 
@@ -55,7 +58,7 @@
             funcional e ainda ganhar dinheiro com ele disponibilizando para alugar por temporada conosco.
             Gerenciamos todo o processo para que você apenas receba o lucro.
         </p>
-        <button class="btn-primary">conheça nossos serviços</button>
+        <a href="whoweare.html#introplan" class="btn-primary">conheça nossos serviços</a>
     </div>
     </div>
 
@@ -69,30 +72,35 @@
         <button class="btn-primary">Conheça nossos serviços</button>
     </div>
     </div>
+    
     <div id="contact">
-        <h1> Entre em contato conosco <br> <br></h1>
-        <p>Salvador e Região metropolitana - BAHIA <br><br></p>
-        <p>+55 71 99999-9999 <br>
+        <div>
+            <h1> Entre em contato conosco <br> <br></h1>
+            <p>Salvador e Região metropolitana - BAHIA <br><br></p>
+            <p>+55 71 99999-9999 <br>
             contato@starhostplus.com.br <br><br><br><br></p>
-
-
-        <div id="contactus">
-            <p>Envie a sua mensagem:</p> <br>
-            <label for="nome"></label>
-            <input type="text" id="nome" name="nome" placeholder="Nome"><br>
-            <label for="email"></label>
-            <input type="text" id="email" name="email" placeholder="Email"><br>
-            <label for="email"></label>
-            <input type="text" id="telefone" name="telefone" placeholder="Telefone">
         </div>
 
-        <div id="datatalent">
-            <h3>Banco de talento <br> <br></h3>
-            <p>Cadastre seu currículo e faça<br>parte da nossa equipe <br><br><br><br><br><br></p>
-            <label for="nome"></label>
-            <input type="text" id="nome" name="nome" placeholder="Digite sua mensagem aqui..."><br>
-            <button class="btn-primary">enviar</button>
 
+        <div style="display: flex; width: 100%;">
+            <div id="contactus">
+                <p>Envie a sua mensagem:</p> <br>
+                <label for="nome"></label>
+                <input type="text" id="nome" name="nome" placeholder="Nome"><br>
+                <label for="email"></label>
+                <input type="text" id="email" name="email" placeholder="Email"><br>
+                <label for="email"></label>
+                <input type="text" id="telefone" name="telefone" placeholder="Telefone">
+            </div>
+    
+            <div id="datatalent">
+                <h3> Banco de talento <br> <br></h3>
+                <p>Cadastre seu currículo e faça<br>parte da nossa equipe <br><br><br><br><br><br></p>
+                <label for="nome"></label>
+                <input type="text" id="nome" name="nome" placeholder="Digite sua mensagem aqui..."><br>
+                <button class="btn-primary">enviar</button>
+    
+            </div>
         </div>
     </div>
 
